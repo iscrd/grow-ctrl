@@ -7,25 +7,24 @@ grow-ctrl, developed by OASIS, is an open toolkit for controlled environment cul
 
 DIYers can purchase a complete PCB (currently in Beta) to get a jump on wiring or instead follow the prototype wiring diagram available here: https://docs.google.com/spreadsheets/d/e/2PACX-1vQgn0rGJVujcdRgQUK21jd7PybuvJZdb9DuSV6mf8QKvGKiNE8npMvLlrqJvNgFDA/pubhtml
 
-# Software Setup (Raspberry Pi)
+# Software Setup (Raspberry Pi) Raspberry Pi OS Lite
 
 First, flash Raspian to an SD card, insert it into the board, and plug in the power
 (NOTE: the SD card is what is used as the memory of your pi and will hold program code and boot instructions. Using a higher quality one and shutting down the pi properly  will increase the stability of Oasis) 
   
   1. Download Balena Etcher: https://www.balena.io/etcher/
   
-  2. Download the latest Raspberry Pi Operating System: https://howtoraspberrypi.com/downloads/
+  2. Download the latest Raspberry Pi Operating System: https://www.raspberrypi.org/software/operating-systems/
   
   3. Connect a micro-SD card to your personal computer
-  
-  3. Format the micro-SD in the MS-DOS (FAT) style. This will be done differently depending on the operating system of your personal computer. 
-  With MacOS, it is done using disk utility
-  
+ 
   4. Open up balena etcher, follow onscreen instructions to flash the RasPi OS to the SD, will eject automatically when finished
   
   5. Place the SD card into the front slot of the Raspberry Pi
   
   6. Connect a keyboard and monitor to the board via USB
+  
+  7. Login: Username: pi Password: raspberry
   
   7. Power up, and follow the on-screen setup guide
      - select languages & timezone
