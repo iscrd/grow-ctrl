@@ -13,34 +13,30 @@ First, flash Raspian to an SD card, insert it into the board, and plug in the po
 (NOTE: the SD card is what is used as the memory of your pi and will hold program code and boot instructions. Using a higher quality one and shutting down the pi properly  will increase the stability of Oasis)
 
   1. Download Balena Etcher: https://www.balena.io/etcher/
-<<<<<<< Updated upstream
   
   2. Download the latest Raspberry Pi Operating System: https://howtoraspberrypi.com/downloads/
-  
+
   3. Connect a micro-SD card to your personal computer
-  
-  3. Format the micro-SD in the MS-DOS (FAT) style. This will be done differently depending on the operating system of your personal computer. 
+
+  3. Format the micro-SD in the MS-DOS (FAT) style. This will be done differently depending on the operating system of your personal computer.
   With MacOS, it is done using disk utility
-  
+
 =======
 
   2. Download the latest Raspberry Pi Operating System: https://www.raspberrypi.org/software/operating-systems/
 
   3. Connect a micro-SD card to your personal computer
 
->>>>>>> Stashed changes
   4. Open up balena etcher, follow onscreen instructions to flash the RasPi OS to the SD, will eject automatically when finished
 
   5. Place the SD card into the front slot of the Raspberry Pi
 
   6. Connect a keyboard and monitor to the board via USB
-<<<<<<< Updated upstream
-  
+
   7. Power up, and follow the on-screen setup guide
      - select languages & timezone
      - connect WiFi
      - update software
-=======
 
   7. Power On
 
@@ -53,7 +49,6 @@ First, flash Raspian to an SD card, insert it into the board, and plug in the po
 
   10. Check IP address
       ifconfig wlan0
->>>>>>> Stashed changes
 
 Now we will install the grow-ctrl software and configure the pi to run it. This is where we will start working from the terminal, so open up a new window.
 
@@ -72,6 +67,7 @@ Now we will install the grow-ctrl software and configure the pi to run it. This 
        pip3 install subprocess32 firebase pyrebase python_jwt gcloud sseclient requests-toolbelt pickle5
 
        (note: you may get error )
+
 5. Clone the grow-ctrl repository
   cd /home/pi
   sudo mkdir grow_ctrl
@@ -79,7 +75,7 @@ Now we will install the grow-ctrl software and configure the pi to run it. This 
    git clone https://github.com/OasisRegenerative/grow-ctrl.git
    cd grow-ctrl
    ls (displays all files)
-   
+
 6. Setup launcher and listener script (This is only required if you intend to launch the program at startup, in conjunction with the mobile interface)
 
        cd grow-ctrl
